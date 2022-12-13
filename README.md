@@ -1,5 +1,11 @@
+# Table des matières :<!-- omit from toc -->
+- [Memory](#memory)
+  - [A faire](#a-faire)
+
+
 # Memory
 
-<u>à faire :</u>
+## A faire
+
 - Réaliser le motif du recto/verso des cartes
-- 
+- Créer une classe *Carte* qui créera une carte:
