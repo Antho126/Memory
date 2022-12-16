@@ -41,6 +41,7 @@ class Card {
         this.value = value;
         this.isFaceUp = isFaceUp;
         this.id = 0;
+        
         this.refreshImage();
     }
 

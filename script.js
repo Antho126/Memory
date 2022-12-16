@@ -1,6 +1,6 @@
 let section = document.getElementById("memory");
 
-let memory = new Memory(2,4);
+let memory = new Memory(3,8);
 section.append(memory.toHTML());
 
 let y = 10000;
