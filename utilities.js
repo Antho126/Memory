@@ -41,7 +41,7 @@ class Card {
         this.value = value;
         this.isFaceUp = isFaceUp;
         this.id = 0;
-        
+
         this.refreshImage();
     }
 
@@ -110,7 +110,7 @@ class Memory {
             const row = [];
             for (let j = 0; j < cols; j++) {
                 const newCard = getRandomCard(true);
-                newCard.id = "c" + this.cardsCount++;
+                newCard.id = "c" + i + j;
                 row.push(newCard);
             }
             this.data.push(row);
@@ -123,12 +123,23 @@ class Memory {
             const tr = document.createElement("tr");
             row.forEach((card) => {
                 const td = document.createElement("td");
-                td.append(card.toHTML());
+                let cardHTML = card.toHTML();
+                cardHTML.addEventListener("click",(x) => {
+                    console.log(x.curerntTarget);
+                });
+                td.append(cardHTML);
                 tr.append(td);
             });
             table.append(tr);
         });
 
         return table;
+    }
+    at(x,y){
+        let sel = document.querySelector(`table #c${x+""+y}`);
+        return sel.id;
+    }
+    findById(id){
+        document.querySelector(`table #c${id}`);
     }
 }
