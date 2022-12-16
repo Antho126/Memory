@@ -7,5 +7,7 @@
 
 ## A faire
 
-- Réaliser le motif du recto/verso des cartes
-- Créer une classe *Carte* qui créera une carte:
+- [x] Réaliser le motif du recto/verso des cartes
+- [x] Créer une classe *Carte* qui créera une carte
+- [x] Créer une classe Memory qui contiendra le tableau
+- [ ] 
